@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Segoe UI", sans-serif;
+    background-color: #0D192C;
+    color: #eee;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    width: 350px;
+    margin: 5rem auto;
+    margin-top: 12.5%;
+    border: 1px solid #ffffff22;
+    background-color: #15263F;
+    border-radius: 10px;
+}
+
+.card .nft-img {
+    transition: all 0.3s;
+}
+
+.card .nft-img:hover {
+    opacity: 0.5;
+    background-image: url(../img/icon-view.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card h2 {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.card h2:hover {
+    color: #00FFF8;
+}
+
+hr {
+    margin-top: 20px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #2E405A;
+}
+
+.card .emoji {
+    text-decoration: none;
+}
+
+.card .nft {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    padding: 1rem;
+}
+
+.card .nft .nft-img {
+    border-radius: 10px;
+    max-width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.card .nft .desc {
+    font-weight: 300;
+    margin: 10px 0;
+    color: #8BACD9;
+}
+
+.card .nft .nft-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card .nft .nft-info .price {
+    display: flex;
+    align-items: center;
+    color: #00FFF8;
+    font-weight: 700;
+}
+
+.card .nft .nft-info .price .emoji {
+    margin-left: 1px;
+    margin-right: 10px;
+}
+
+.card .nft .nft-info .time {
+    display: flex;
+    align-items: center;
+    color: #8BACD9;
+    margin-right: 10px;
+}
+
+.card .nft .nft-info .time .emoji {
+    margin: 10px;
+    margin-bottom: 10px;
+}
+
+.card .nft .avatar {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: -5px;
+}
+
+.card .nft .avatar .emoji {
+    color: #a89ec9;
+    text-decoration: none;
+}
+
+.card .nft .avatar .wrapper {
+    display: flex;
+    align-items: center;
+    border: 1px solid #FFFFFF;
+    margin-top: 10px;
+    margin-right: 15px;
+    border-radius: 100%;
+}
+
+.avatar span {
+    font-weight: 400;
+    font-size: 16px;
+    color: #8BACD9;
+}
+
+.avatar p {
+    transition: all 0.3s;
+}
+
+.avatar p:hover {
+    color: #00FFF8;
+}
+
+.card .nft .avatar .wrapper img {
+    width: 32px;
+    height: 32px;
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 50%;
+        margin: 2rem auto;
+        margin-top: 10%;
+    }
+
+    .card .nft-img {
+        height: auto;
+    }
+
+    .card h2 {
+        font-size: 18px;
+    }
+}
